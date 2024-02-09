@@ -1,11 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bandage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        header: '#23856D',
+                        light: '#fff',
+                        dark: '#000',
+                        'gray-750': '#737373',
+                        primary: '#23A6F0',
+                        heroBg: "#FAFAFA",
+                        muted: "#BDBDBD",
+                        discount: '#23856D',
+                        alert: '#E77C40',
+                        btnNavBg: '#E8E8E8',
+                    },
+                    spacing: {
+                        2: '2px',
+                        4: '4px',
+                        5: '5px',
+                        6: '6px',
+                        10: '10px',
+                        14: '14px',
+                        15: "15px",
+                        16: '16px',
+                        18: "18px",
+                        20: '20px',
+                        22: '22px',
+                        24: "24px",
+                        25: '25px',
+                        28: '28px',
+                        30: '30px',
+                        40: '40px',
+                        48: "48px",
+                        50: '50px',
+                        65: "65px",
+                        75: "75px",
+                        85: "85px",
+                        99: '99px',
+
+
+                    }, fontSize: {
+                        12: "12px",
+                        14: '14px',
+                        16: '16px',
+                        24: '24px',
+                    }, lineHeight: {
+                        16: '16px',
+                        20: '20px',
+                        24: '24px',
+                        32: '32px',
+                        36: '36px',
+                    }
+                }, letterSpacing: {
+                    1: '0.2px',
+                    2: '0.2px',
+
+                },
+                fontFamily: {
+                    'mont': ['Montserrat']
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-mont">
+    <header>
+        <div class="mx-auto bg-header pt-24 pb-18">
+            <div class="2xl:container 2xl:w-[1042px]  mx-auto flex justify-between">
+                <div class="flex w-[363px] justify-between items-center ">
+                    <a href="tel:+12255550118"
+                        class="text-light text-12 leading-16 tracking-2 before:content-[url('./img/svg/phone.svg')] before:mr-5 before:relative before:top-4">
+                        (225) 555-0118</a>
+                    <a href="mailto:michelle.rivera@example.com"
+                        class="text-light text-12 leading-16 tracking-2 before:content-[url('./img/svg/mail.svg')] before:mr-5 before:relative before:top-4">
+                        michelle.rivera@example.com</a>
+                </div>
+                <p class="text-light text-12 leading-24 tracking-2">Follow Us and get a chance to win 80% off</p>
+                <div class="flex w-[235px] ">
+                    <a href="#" class="text-light text-12 leading-24 tracking-2 ">Follow Us :</a>
+                    <ul class="flex items-center">
+                        <li class="list-none ml-16"><a href="#"><img src="img/svg/insta.svg" alt=""></a></li>
+                        <li class="list-none ml-16"><a href="#"><img src="img/svg/you.svg" alt=""></a></li>
+                        <li class="list-none ml-16"><a href="#"><img src="img/svg/face.svg" alt=""></a></li>
+                        <li class="list-none ml-16"><a href="#"><img src="img/svg/twi.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="2xl:container 2xl:max-w-[1042px]  mx-auto flex justify-between items-center py-24">
+            <a href="#" class="font-display font-bold text-24 leading-36 tracking-1">Bandage</a>
+            <div class="flex w-[815px] justify-between">
+                <ul class="flex w-[361px] justify-between">
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">Home</a></li>
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">Shop</a></li>
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">About</a></li>
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">Blog</a></li>
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">Contact</a></li>
+                    <li class="list-none"><a href="#"
+                            class="font-bold text-14 leading-24 tracking-2 text-gray-750">Pages</a></li>
+                </ul>
+                <div>
+                    <div class="w-[166px] flex justify-around items-center">
+                        <a href="#"
+                            class=" text-14 leading-24 tracking-2 text-primary before:content-[url('./img/svg/login.svg')] before:mr-5 before:relative before:top-2 ml-30">Login</a>
+                        <a href="#"
+                            class=" text-14 leading-24 tracking-2 text-primary  before:content-['/'] before:mr-5 ">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-heroBg pt-30 pb-48 ">
+            <div class="2xl:container 2xl:max-w-[1042px] flex justify-between m-auto pb-24">
+                <h1 class="text-dark text-24 leading-32 tracking-2 font-bold">Shop</h1>
+                <div class="flex w-[119px] justify-between">
+                    <a class="text-dark text-14 leading-24 tracking-2 font-bold" href="#">Home</a>
+                    <p
+                        class="before:content-[url('./img/svg/arrow.svg')] before:right-15 before:relative before:top-2 text-muted text-14 leading-24 tracking-2 font-bold">
+                        Shop</p>
+                </div>
+            </div>
+
+            <div class="2xl:container 2xl:max-w-[1088px] flex justify-between m-auto">
+                <div class="w-[205px] h-[223px] relative bg-[url('./img/hero-1.jpeg')]">
+                    <div class="absolute top-85 left-65 text-center">
+                        <p class="text-light font-bold text-16 leading-24 tracking-1 ">CLOTHS</p>
+                        <p class="text-light text-14 leading-20 tracking-2">5 items</p>
+                    </div>
+                </div>
+                <div class="w-[205px] h-[223px] relative bg-[url('./img/hero-2.jpeg')]">
+                    <div class="absolute top-85 left-65 text-center">
+                        <p class="text-light font-bold text-16 leading-24 tracking-1 ">CLOTHS</p>
+                        <p class="text-light text-14 leading-20 tracking-2">5 items</p>
+                    </div>
+                </div>
+                <div class="w-[205px] h-[223px] relative bg-[url('./img/hero-3.jpeg')]">
+                    <div class="absolute top-85 left-65 text-center">
+                        <p class="text-light font-bold text-16 leading-24 tracking-1 ">CLOTHS</p>
+                        <p class="text-light text-14 leading-20 tracking-2">5 items</p>
+                    </div>
+                </div>
+                <div class="w-[205px] h-[223px] relative bg-[url('./img/hero-4.jpeg')]">
+                    <div class="absolute top-85 left-65 text-center">
+                        <p class="text-light font-bold text-16 leading-24 tracking-1 ">CLOTHS</p>
+                        <p class="text-light text-14 leading-20 tracking-2">5 items</p>
+                    </div>
+                </div>
+                <div class="w-[205px] h-[223px] relative bg-[url('./img/hero-5.jpeg')]">
+                    <div class="absolute top-85 left-65 text-center">
+                        <p class="text-light font-bold text-16 leading-24 tracking-1 ">CLOTHS</p>
+                        <p class="text-light text-14 leading-20 tracking-2">5 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="max-w-[1048px] m-auto flex justify-between items-center py-24">
+            <h2 class="text-14 font-bold tracking-2 leading-24 text-gray-750">Showing all 12 results</h2>
+            <div class="flex w-[170px] justify-between items-center">
+                <p class="text-14 font-bold tracking-2 leading-24 text-gray-750">Views:</p>
+                <a href="#"><img class="p-15 border-muted border-2 rounded-md " src="./img/svg/block.svg" alt=""></a>
+                <a href="#"><img class="p-15 border-muted border-2 rounded-md " src="./img/svg/list.svg" alt=""></a>
+            </div>
+            <div class="w-[232px] flex justify-between">
+                <a href="#"
+                    class="text-14 tracking-2 leading-28 after:content-[url('./img/svg/arrow-down.svg')]  after:ml-6 text-gray-750 border-2 border-solid rounded-md border-gray-750 px-20 py-10">Popularity</a>
+                <a href="#"
+                    class="py-10 px-20 bg-primary text-light border-2 border-solid border-primary rounded-md text-14 font-bold">Filter</a>
+            </div>
+        </div>
+        <section class="py-48 max-w-[1048px] flex flex-wrap m-auto gap-30 text-center">
+            <div class="w-[239px] mb-28 h -[490px] bg-[url('./img/product-cover-1.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-2.png')] bg-no-repeat relative ">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-3.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-4.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-5.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-6.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-7.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-8.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-9.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-10.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-11.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[239px] mb-28 h-[490px] bg-[url('./img/product-cover-12.png')] bg-no-repeat relative">
+                <div class="absolute bottom-0 left-40">
+                    <h2 class="text-16 tracking-1 text-dark font-bold mb-10">Graphic design</h2>
+                    <p class="text-14 tracking-2 text-gray-750 font-bold mb-15 ">English Department</p>
+                    <div class=" mb-10 flex w-[110px] justify-between m-auto">
+
+                        <p class="text-16 tracking-1 text-muted font-bold before:content-['$'] before:block">16.48 </p>
+                        <p class="text-16 tracking-1 font-bold text-discount before:content-['$'] before:block">6.48
+                        </p>
+                    </div>
+                    <div class="h-16 w-[83px] flex justify-between m-auto">
+                        <span class="w-16 h-16 rounded-full bg-primary block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                        <span class="w-16 h-16 rounded-full bg-alert block"></span>
+                        <span class="w-16 h-16 rounded-full bg-discount block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex m-auto ">
+                <p
+                    class="cursor-pointer p-25 text-14 font-bold tracking-2 border-muted border-t-2 border-b-2 border-l-2 border-solid  rounded-l-lg bg-muted text-gray-750">
+                    First</p>
+                <p
+                    class="cursor-pointer py-25 text-14 font-bold tracking-2 px-20 b border-muted border-l-2 border-l-btnNavBg border-t-2 border-b-2 border-solid  ">
+                    1</p>
+                <p
+                    class="cursor-pointer py-25 text-14 font-bold tracking-2 px-20 border-muted border-l-2 border-l-btnNavBg border-t-2 border-b-2 border-solid bg-primary text-light">
+                    2</p>
+                <p
+                    class="cursor-pointer py-25 text-14 font-bold tracking-2 px-20 border-muted border-t-2 border-l-2 border-l-btnNavBg border-b-2 border-solid ">
+                    3</p>
+                <p
+                    class="cursor-pointer p-25 text-14 font-bold tracking-2 rounded-r-lg border-muted border-t-2 border-l-btnNavBg border-b-2 border-r-2 border-solid border-l-2 text-primary">
+                    Next</p>
+            </div>
+        </section>
+        <div class="bg-heroBg p-50">
+            <div class="2xl:container 2xl:w-[1054px] m-auto flex justify-between items-center">
+                <a href="#"> <img src="./img/fa-brands-1.png" alt="">
+                </a>
+                <a href="#"><img src="./img/fa-brands-2.png" alt="">
+                </a>
+                <a href="#"><img src="./img/fa-brands-3.png" alt="">
+                </a>
+                <a href="#"> <img src="./img/fa-brands-4.png" alt="">
+                </a>
+                <a href="#"><img src="./img/fa-brands-5.png" alt="">
+                </a>
+                <a href="#"> <img src="./img/fa-brands-6.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="2xl:container 2xl:w-[1054px] flex m-auto justify-between py-40">
+                <a href="#" class="text-24 font-bold tracking-1 leading-32 text-dark">Bandage</a>
+                <ul class="w-[109px] flex justify-between">
+                    <li class="list-none"><a href="#"><img src="./img/svg/faceblue.svg" alt=""></a></li>
+                    <li class="list-none"><a href="#"><img src="./img/svg/instablue.svg" alt=""></a></li>
+                    <li class="list-none"><a href="#"><img src="./img/svg/twiblue.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+    <footer>
+        <div class="2xl:container 2xl:w-[1050px] flex justify-between m-auto">
+            <div class="flex w-[670px] justify-between">
+                <ul class="">
+                    <li class="text-16 font-bold tracking-1 text-dark mb-16">Company Info</li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10 "><a href="#">About Us</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10 "><a href="#">Carrier</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10 "><a href="#">We are hiring</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10 "><a href="#">Blog</a></li>
+                </ul>
+                <ul class="">
+                    <li class="text-16 font-bold tracking-1 text-dark mb-16">Legal</li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">About Us</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Carrier</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">We are hiring</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Blog</a></li>
+                </ul>
+                <ul class="">
+                    <li class="text-16 font-bold tracking-1 text-dark mb-16">Features</li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Business Marketing</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">User Analytic</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Live Chat</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Unlimited Support</a></li>
+                </ul>
+                <ul class="">
+                    <li class="text-16 font-bold tracking-1 text-dark mb-16">Resources</li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">IOS & Android</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Watch a Demo</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">Customers</a></li>
+                    <li class="text-14 font-bold tracking-2 text-gray-750 mb-10"><a href="#">API</a></li>
+                </ul>
+
+            </div>
+            <div class="w-[321px]">
+                <h3 class="text-16 font-bold tracking-1 text-dark mb-20">Get in Touch</h3>
+                <form class="relative">
+                    <input class="flex items-center rounded-md border-2 border-solid w-[315px] py-15 pl-20 bg-heroBg mb-5"
+                        placeholder="Your Email" type="email">
+                    <button
+                        class="absolute top-0 right-1 text-14 leading-28 tracking-2 rounded-r-md border-2 border-solid border- text-light bg-primary py-16 px-22 cursor-pointer">Subscribe</button>
+                </form>
+                <p class=" text-12 leading-28 tracking-2 text-gray-750">Lore imp sum dolor Amit</p>
+            </div>
+
+        </div>
+      <div class="bg-heroBg py-25">
+        <div class="2xl:container 2xl:w-[1050px] m-auto">
+            <p class="text-14 font-bold leading-24 tracking-2 text-gray-750">Made With Love By Finland All Right Reserved </p>
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>
